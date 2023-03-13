@@ -88,9 +88,12 @@ public class Cart {
                 i = products.length;
                 }
             }
-                for (Product product : products) {
-                    System.out.println("Il tuo carrello contiene: " + product);
         }
+                for (Product product : products) {
+                    System.out.println("Il tuo carrello contiene:");
+                    System.out.println(product.getName() + " " + product.priceIva());
+                    System.out.println("Con lo sconto il prezzo finale è: " + product.baseDiscount());
+
         }
 
 
