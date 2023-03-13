@@ -2,10 +2,10 @@ package inheritance.shop;
 
 public class Headphone extends Product{
 //CAMPI
-    private boolean cable;
+    private String cable;
     private String color;
 
-    public boolean isCable() {
+    public String isCable() {
         return cable;
     }
 
@@ -13,7 +13,7 @@ public class Headphone extends Product{
         return color;
     }
 
-    public void setCable(boolean cable) {
+    public void setCable(String cable) {
         this.cable = cable;
     }
 
@@ -21,7 +21,7 @@ public class Headphone extends Product{
         this.color = color;
     }
 
-    public Headphone(String name, String description, double price, boolean cable, String color) {
+    public Headphone(String name, String description, double price, String cable, String color) {
         super(name, description, price);
         this.cable = cable;
         this.color = color;

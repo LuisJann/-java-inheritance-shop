@@ -3,7 +3,7 @@ package inheritance.shop;
 public class Tv extends Product{
 
     private int dimension;
-    private boolean smart;
+    private String smart;
 
     public int getDimension() {
         return dimension;
@@ -13,11 +13,11 @@ public class Tv extends Product{
         this.dimension = dimension;
     }
 
-    public boolean isSmart() {
+    public String isSmart() {
         return smart;
     }
 
-    public void setSmart(boolean smart) {
+    public void setSmart(String smart) {
         this.smart = smart;
     }
 
@@ -26,7 +26,7 @@ public class Tv extends Product{
         this.smart = smart;
     }
 
-    public Tv(String name, String description, double price, int dimension, boolean smart) {
+    public Tv(String name, String description, double price, int dimension, String smart) {
         super(name, description, price);
         this.dimension = dimension;
         this.smart = smart;

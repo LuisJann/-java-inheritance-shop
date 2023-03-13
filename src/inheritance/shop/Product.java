@@ -61,11 +61,11 @@ public class Product {
         return this.price * iva;
     }
 
-    public int baseDiscount(){
+    public void baseDiscount(){
         if (fedelityCard.equals("y")){
-            return (int) (this.price = (price * iva) * 0.98);
+            this.price = (price * iva) * 0.98;
         } else {
-            return (int) this.price;
+            this.price = priceIva();
         }
     }
 
