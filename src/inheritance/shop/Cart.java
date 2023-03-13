@@ -1,6 +1,7 @@
 package inheritance.shop;
 
 import java.util.Arrays;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Cart {
@@ -92,7 +93,9 @@ public class Cart {
                 for (Product product : products) {
                     System.out.println("Il tuo carrello contiene:");
                     System.out.println(product.getName() + " " + product.priceIva());
-                    System.out.println("Con lo sconto il prezzo finale è: " + product.baseDiscount());
+                    if (Objects.equals(product.getFedelityCard(), "y")) {
+                        System.out.println("Con lo sconto il prezzo finale è: " + product.baseDiscount());
+                    }
 
         }
 

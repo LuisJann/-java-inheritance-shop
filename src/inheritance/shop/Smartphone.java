@@ -36,6 +36,14 @@ public class Smartphone extends Product {
         return imei = rand.nextInt(111111111,999999999);
     }
 
+    @Override
+    public double baseDiscount() {
+       if (this.memory <= 32){
+           return this.setPrice(priceIva() * 0.95);
+       }else{
+           return super.baseDiscount();
+       }
+    }
 
     @Override
     public String toString() {

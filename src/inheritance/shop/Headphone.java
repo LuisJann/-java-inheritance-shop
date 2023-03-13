@@ -1,5 +1,7 @@
 package inheritance.shop;
 
+import java.util.Objects;
+
 public class Headphone extends Product{
 //CAMPI
     private String cable;
@@ -30,6 +32,18 @@ public class Headphone extends Product{
     public Headphone() {
         this.cable = cable;
         this.color = color;
+    }
+
+    //METODI
+
+
+    @Override
+    public double baseDiscount() {
+        if(Objects.equals(cable, "y")){
+            return this.setPrice(priceIva() * 0.93);
+        }else {
+            return super.baseDiscount();
+        }
     }
 
     @Override

@@ -1,5 +1,7 @@
 package inheritance.shop;
 
+import java.util.Objects;
+
 public class Tv extends Product{
 
     private int dimension;
@@ -19,6 +21,18 @@ public class Tv extends Product{
 
     public void setSmart(String smart) {
         this.smart = smart;
+    }
+
+    //METODI
+
+
+    @Override
+    public double baseDiscount() {
+        if(Objects.equals(smart, "n")){
+            return this.setPrice(priceIva() * 0.90);
+        }else{
+            return super.baseDiscount();
+        }
     }
 
     public Tv() {
