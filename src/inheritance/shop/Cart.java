@@ -1,5 +1,6 @@
 package inheritance.shop;
 
+import java.text.DecimalFormat;
 import java.util.Arrays;
 import java.util.Objects;
 import java.util.Scanner;
@@ -11,6 +12,7 @@ public class Cart {
         Smartphone phone = new Smartphone();
         Tv tv = new Tv();
         Headphone headphone = new Headphone();
+        DecimalFormat df = new DecimalFormat("##0.00");
 
 
         System.out.println("----Benvenuto in Booleazon----");
@@ -92,12 +94,12 @@ public class Cart {
         }
                 for (Product product : products) {
                     if (product == null){
-                        System.out.println("Hai dimenticato di insere un prodotto");
+                        System.out.println("Hai dimenticato di inserire uno o più prodotti");
                     }else {
                     System.out.println("Il tuo carrello contiene:");
-                    System.out.println(product.getName() + " " + product.priceIva());
+                    System.out.println(product.getName() + " " + df.format(product.priceIva()) + "€");
                     if (Objects.equals(product.getFedelityCard(), "y")) {
-                        System.out.println("Con lo sconto il prezzo finale è: " + product.baseDiscount());
+                        System.out.println("Con lo sconto il prezzo finale è: " + df.format(product.baseDiscount())+ "€");
                     }
 
                     }
