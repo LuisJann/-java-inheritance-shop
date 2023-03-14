@@ -7,7 +7,7 @@ public class Headphone extends Product{
     private String cable;
     private String color;
 
-    public String isCable() {
+    public String Cable() {
         return cable;
     }
 

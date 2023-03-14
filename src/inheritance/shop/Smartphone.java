@@ -4,7 +4,6 @@ import java.text.DecimalFormat;
 import java.util.Random;
 
 public class Smartphone extends Product {
-    DecimalFormat df = new DecimalFormat();
     Random rand = new Random();
     private int imei;
     private int memory;

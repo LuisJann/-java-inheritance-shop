@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="333e49cb-456a-4255-8320-1cf96a04bbce" name="Changes" comment="Add Print function">
+    <list default="true" id="333e49cb-456a-4255-8320-1cf96a04bbce" name="Changes" comment="Add Bonus">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/inheritance/shop/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritance/shop/Cart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/inheritance/shop/Headphone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritance/shop/Headphone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inheritance/shop/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritance/shop/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/inheritance/shop/Smartphone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritance/shop/Smartphone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/inheritance/shop/Tv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/inheritance/shop/Tv.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +77,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678725461250</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add Bonus">
+      <created>1678726732504</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1678726732504</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -87,6 +92,12 @@
     <MESSAGE value="Add cart and Smartphone" />
     <MESSAGE value="Add array" />
     <MESSAGE value="Add Print function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Print function" />
+    <MESSAGE value="Add Bonus" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Bonus" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/java_inheritance_shop$Cart.ic" NAME="Cart Coverage Results" MODIFIED="1678726716756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>inheritance.shop.*</FILTER>
+    </SUITE>
   </component>
 </project>

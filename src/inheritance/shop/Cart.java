@@ -37,9 +37,9 @@ public class Cart {
                 phone.setMemory(Integer.parseInt(scan.nextLine()));
                 System.out.println("Hai una fedelity card (Y/N): ");
                 phone.setFedelityCard(scan.nextLine());
-                phone.baseDiscount();
                 System.out.println("Inserisci il prezzo: ");
                 phone.setPrice(Integer.parseInt(scan.nextLine()));
+                phone.baseDiscount();
 
                 if(products[i] == null){
                     products[i] = phone;
@@ -91,22 +91,17 @@ public class Cart {
             }
         }
                 for (Product product : products) {
+                    if (product == null){
+                        System.out.println("Hai dimenticato di insere un prodotto");
+                    }else {
                     System.out.println("Il tuo carrello contiene:");
                     System.out.println(product.getName() + " " + product.priceIva());
                     if (Objects.equals(product.getFedelityCard(), "y")) {
                         System.out.println("Con lo sconto il prezzo finale è: " + product.baseDiscount());
                     }
 
+                    }
+
         }
-
-
-
-
-
-        /*System.out.println(prod);
-        System.out.println(phone);
-        System.out.println(tv);
-        System.out.println(headphone);*/
-
     }
 }
